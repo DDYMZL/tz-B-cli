@@ -15,8 +15,8 @@ program.parse(process.argv)
 if (program.args.length < 1) return program.help()
 
 // 第一个参数是 webpack，第二个参数是 project-name
-let templateName = program.args[0]
-let projectName = program.args[1]
+let templateName = program.args[1]
+let projectName = program.args[2]
 
 if (!templateList[templateName]) {
   console.log(chalk.red('\n Template does not exit! \n '))
@@ -28,13 +28,11 @@ if (!projectName) {
 }
 
 let url = templateList[templateName]
-console.log(url)
 
 console.log(chalk.green('\n Start generating... \n'))
 // 出现加载图标
 const spinner = ora("Downloading...");
 spinner.start();
-
 download(
   `direct:${url}`,
   `./${projectName}`,
