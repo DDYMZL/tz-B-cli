@@ -19,8 +19,8 @@ program
     require('../commands/delete')
   })
 
-program.command('list').description('template list').action(()=>{ require('../command/list') })
+program.command('list').description('template list').action(()=>{ require('../commands/list') })
 
-program.command('init').description('init a project').action(()=>{ require('../command/init') })
+program.command('init').description('init a project').action(()=>{ require('../commands/init') })
 
   program.parse(process.argv)

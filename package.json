@@ -2,9 +2,14 @@
   "name": "nuxt-template",
   "version": "1.0.0",
   "bin": {
-    "cm": "bin/cm"
+    "cm-add": "bin/cm-add",
+    "cm-list": "bin/cm-list",
+    "cm-delete": "bin/cm-delete",
+    "cm-init": "bin/cm-init"
   },
   "dependencies": {
-    "commander": "^8.3.0"
+    "cli-table": "^0.3.9",
+    "commander": "^8.3.0",
+    "inquirer": "^8.2.0"
   }
 }
