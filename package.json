@@ -8,8 +8,12 @@
     "cm-init": "bin/cm-init"
   },
   "dependencies": {
+    "chalk": "^4.1.2",
     "cli-table": "^0.3.9",
     "commander": "^8.3.0",
-    "inquirer": "^8.2.0"
+    "download-git-repo": "^3.0.2",
+    "inquirer": "^8.2.0",
+    "log-symbols": "^5.0.0",
+    "ora": "^6.0.1"
   }
 }
