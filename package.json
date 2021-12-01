@@ -2,10 +2,7 @@
   "name": "tzpm",
   "version": "1.0.0",
   "bin": {
-    "tzpm-add": "bin/tzpm-add",
-    "tzpm-list": "bin/tzpm-list",
-    "tzpm-delete": "bin/tzpm-delete",
-    "tzpm-init": "bin/tzpm-init"
+    "tzpm": "bin/tzpm"
   },
   "dependencies": {
     "chalk": "^4.1.2",
